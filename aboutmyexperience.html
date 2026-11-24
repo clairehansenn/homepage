@@ -9,30 +9,19 @@
     display: block;
 }
 
-    .album-container {
-    width: 100%;
-    height: 350px;
+.photos {
     display: flex;
     justify-content: center;
     align-items: center;
-    perspective: 1000px;
+    gap: 25px;
+    margin-top: 50px;
 }
 
-.album {
-    position: relative;
-    width: 180px;
-    height: 220px;
-    transform-style: preserve-3d;
-    transition: transform 1s;
-}
-
-.album img {
-    position: absolute;
-    width: 180px;
-    height: 220px;
+.photos img {
+    width: 200px;
+    height: 250px;
     object-fit: cover;
-    border: 5px solid white;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    border: 8px solid white;
 }
 
     
@@ -44,21 +33,12 @@
   <img src="experienceheader.gif">
 </header>
 
-    <div class="album-container">
+  <div class="photos">
 
-    <div class="album" id="album">
+    <img src="content.JPG">
+    <img src="farm.jpeg">
+    <img src="farmm.jpg">
 
-        <img src="content.JPG">
-        <img src="farm.JPEG">
-        <img src="farmm.JPG">
-
-    </div>
-
-</div>
-
-<div class="album-buttons">
-    <button onclick="rotateAlbum(-1)">Previous</button>
-    <button onclick="rotateAlbum(1)">Next</button>
 </div>
     
   </body>
