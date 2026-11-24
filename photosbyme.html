@@ -2,10 +2,83 @@
 <html>
   
   <style>
+
+    .photo-map {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.map-background {
+    width: 100%;
+    display: block;
+}
+
+.map-photo {
+    position: absolute;
+    width: 15%;
+    height: auto;
+    border: 5px solid white;
+    box-shadow: 2px 3px 10px rgba(0,0,0,0.3);
+
+    transition: all 0.35s ease;
+    cursor: pointer;
+}
+
+    
+.atl {
+    top: 49%;
+    left: 72%;
+    transform: rotate(-8deg);
+}
+
+.atlanta {
+    top: 51%;
+    left: 78%;
+    transform: rotate(6deg);
+}
+
+.nash {
+    top: 43%;
+    left: 68%;
+    transform: rotate(-5deg);
+}
+
+.colorado {
+    top: 36%;
+    left: 29%;
+    transform: rotate(9deg);
+}
+
+    .nc {
+    top: 39%;
+    left: 75%;
+    transform: rotate(9deg);
+}
+
+    
+.map-photo:hover {
+    transform: rotate(0deg) scale(1.4);
+    z-index: 10;
+}
+    
   </style>
 
   <body>
-    This is photos by me
+
+    <div class="photo-map">
+
+    <img src="map.webp" class="map-background">
+
+    <img src="atl.jpg" class="map-photo atl">
+    <img src="atlanta.jpg" class="map-photo atlanta">
+    <img src="bluebird.JPG" class="map-photo nash">
+    <img src="colorado.jpg" class="map-photo colorado">
+      <img src="nc.jpg" class="map-photo nc">
+
+</div>
+    
   </body>
   
 </html>
